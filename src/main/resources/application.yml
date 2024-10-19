@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecommerce_db
+    username:     # Change to your MySQL username
+    password:     # Change to your MySQL password
+  jpa:
+    hibernate:
+      ddl-auto: update          # Use 'update' for automatic schema updates
+    show-sql: true              # Enable logging of SQL queries
+  sql:
+    init:
+      mode: always               # Initializes the database at startup
